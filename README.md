@@ -28,7 +28,7 @@ This project implements a production-style RAG pipeline that allows users to que
 → Transcript Extraction (yt-dlp)
 → Transcript Parsing & Cleaning
 → Text Chunking (LangChain Recursive Splitter)
-→ Embedding Generation
+→ Embedding Generation (Gemini Embeddings - gemini-embedding-001)
 → Vector Storage (FAISS)
 → User Query
 → Query Embedding
@@ -58,7 +58,7 @@ This project implements a production-style RAG pipeline that allows users to que
    - Prompt Engineering
 2. Data & Retrieval
   - FAISS (Vector Database)
-  - Embeddings (e.g., SentenceTransformers / OpenAI – configurable)
+  - Google Generative AI Embeddings (gemini-embedding-001)
 3. Libraries & Tools
   - LangChain
   - yt-dlp (Transcript Extraction)
