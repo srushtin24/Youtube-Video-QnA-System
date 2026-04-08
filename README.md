@@ -5,7 +5,7 @@ An end-to-end Retrieval-Augmented Generation (RAG) system that enables semantic 
 
 ## 🚀 Overview
 
-This project implements a production-style RAG pipeline that allows users to query YouTube videos using natural language. It leverages transcript extraction, semantic search over embeddings, and LLM-based generation to produce accurate, context-grounded answers while minimizing hallucinations..
+This project implements a production-style RAG pipeline that allows users to query YouTube videos using natural language. It leverages transcript extraction, semantic search over embeddings, and LLM-based generation to produce accurate, context-grounded answers while minimizing hallucinations.
 
 
 ## ✨ Key Features
@@ -23,8 +23,8 @@ This project implements a production-style RAG pipeline that allows users to que
   Separates ingestion, retrieval, and generation components
 
 
-## 🧠 System Architecture<br>
-
+## 🧠 System Architecture
+YouTube URL 
 → Transcript Extraction (yt-dlp)
 → Transcript Parsing & Cleaning
 → Text Chunking (LangChain Recursive Splitter)
@@ -42,7 +42,7 @@ This project implements a production-style RAG pipeline that allows users to que
 1. Extract subtitles using yt-dlp in JSON3 format
 2. Parse and clean transcript into structured segments
 3. Split transcript into semantically meaningful chunks
-4. Convert text chunks into vector embeddings (embedding model configurable)
+4. Convert text chunks into vector embeddings (Gemini Embeddings - gemini-embedding-001)
 5. Store embeddings in FAISS vector index
 6. Convert user query into embedding
 7. Retrieve top-K relevant chunks using similarity search
@@ -52,14 +52,14 @@ This project implements a production-style RAG pipeline that allows users to que
 
 ## 🏗️ Tech Stack
 
-1. Core AI / GenAI
+### Core AI / GenAI
    - Retrieval-Augmented Generation (RAG)
    - Large Language Models (LLMs) via Groq API
    - Prompt Engineering
-2. Data & Retrieval
+### Data & Retrieval
   - FAISS (Vector Database)
   - Google Generative AI Embeddings (gemini-embedding-001)
-3. Libraries & Tools
+### Libraries & Tools
   - LangChain
   - yt-dlp (Transcript Extraction)
   - youtube-transcript-api
