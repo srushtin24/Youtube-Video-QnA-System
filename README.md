@@ -66,9 +66,21 @@ This project implements a production-style RAG pipeline that allows users to que
   - tiktoken
   - python-dotenv 
 
-## 🚀 Future Improvements
+## ⚡ System Strengths
+- Grounded responses reduce hallucination
+- Efficient semantic retrieval over long transcripts
+- Scalable and modular pipeline design
+- Works effectively on unstructured video data
 
-- Multi-video knowledge base  
-- Source attribution (timestamps)  
-- Hybrid retrieval (keyword + vector search)  
-- API deployment for production use 
+## ▶️ Usage
+- Provide a YouTube video URL
+- System extracts transcript automatically
+- Ask questions related to the video
+- Receive accurate, context-aware answers
+
+## 🚀 Future Improvements
+- Multi-video knowledge base support
+- Conversational memory (multi-turn chat)
+- Hybrid search (keyword + vector retrieval)
+- Response evaluation metrics (accuracy, relevance)
+- Deployment (FastAPI backend + React frontend)
