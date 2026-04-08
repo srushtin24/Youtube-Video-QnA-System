@@ -22,6 +22,49 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline over
 - **Modular Pipeline Design**  
   Separates ingestion, retrieval, and generation components
 
----
 
-## 🧠 System Architecture
+## 🧠 System Architecture<br>
+
+YouTube Video URL<br>
+↓<br>
+Transcript Extraction<br>
+↓<br>
+Text Chunking<br>
+↓<br>
+Embedding Generation<br>
+↓<br>
+Vector Store (ChromaDB)<br>
+↓<br>
+User Query<br>
+↓<br>
+Top-K Semantic Retrieval<br>
+↓<br>
+Context Injection into Prompt<br>
+↓<br>
+LLM Response Generation<br>
+
+
+## ⚙️ How It Works
+
+1. Extract transcript from a YouTube video  
+2. Split transcript into smaller chunks  
+3. Generate embeddings and store them in a vector database  
+4. Accept user query  
+5. Retrieve top-k relevant chunks using semantic similarity  
+6. Inject retrieved context into the LLM prompt  
+7. Generate and return a grounded answer  
+
+
+## 🏗️ Tech Stack
+
+- **LLM & Orchestration:** LangChain, LLM APIs  
+- **Vector Database:** ChromaDB  
+- **Embeddings:** Sentence Transformers / OpenAI  
+- **Backend / Processing:** Python  
+
+## 🚀 Future Improvements
+
+- Multi-video knowledge base  
+- Source attribution (timestamps)  
+- Hybrid retrieval (keyword + vector search)  
+- API deployment for production use 
